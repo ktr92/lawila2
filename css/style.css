@@ -431,7 +431,7 @@ height: 100%;
   line-height: 1.2;
   text-align: center;
   font-weight: bold;
-  height: 50px;
+  height: 60px;
   display: block;
 }
 .products__coltitle {
@@ -440,6 +440,7 @@ height: 100%;
 		line-height: 1;
   font-size: 14px;
   color: rgb(0, 0, 0);
+  padding-right: 3px;
 }
 .products__colors
 {
@@ -448,7 +449,7 @@ height: 100%;
 }
 .products__color {
 	display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 	line-height: 1;
 }
 .products__color span {
@@ -471,7 +472,6 @@ height: 100%;
   text-align: center;
 	font-weight: bold;
 	margin-bottom: 10px;
-	padding-bottom: 1px;
 }
 
 .products__subprice {
@@ -479,6 +479,8 @@ height: 100%;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
+  	padding-bottom: 2px;
+
  
 }
 
@@ -493,7 +495,7 @@ height: 100%;
 	background: #fff;
 	border-radius: 50%;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
 }
 
 .products__image {
@@ -510,6 +512,10 @@ height: 100%;
 -moz-transition-duration:0.66s;
 -o-transition-duration:0.66s;
 -ms-transition-duration:0.66s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 100%;
 }
 
 .products_image2 {
@@ -562,6 +568,58 @@ height: 100%;
   
 }
 
+.params__prop {
+  float: left;
+  font-size: 14px;
+  text-align: left;
+ 
+}
+.params__dots {
+	 border-bottom: 1px dotted #000;
+	 float: left;
+}
+.params__value {
+  float: right; 
+
+  font-size: 14px;
+  text-align: left;
+
+	padding-left: 10px;
+}
+
+.params {
+	margin-bottom: 5px;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.params__prop span {
+    background: #fff;
+
+    padding-right: 5px;
+    position: relative;
+}
+span.params__fordots {
+	 background: #fff;
+    display: inline-block;
+    padding-left: 5px;
+    position: relative;
+		    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.params__dots {
+	width: 100%;
+	margin-top: -5px;
+}
+
+.paramsblock {
+	padding: 20px 0 50px 0;
+}
+.paramss {
+	margin-bottom: 20px;
+}
 
 @media screen and (min-width: 992px) {
 	.modal:before {
@@ -1318,117 +1376,32 @@ height: 100%;
 }
 
 @media (max-width: 767px) {
-	.mainblock__mask {
-		background: rgba(255, 255, 255, 0.5);
+		
+	.params__prop {
 		width: 100%;
+		font-weight: bold;
 	}
-	.fitches__item {
-		width: 100%;
-	}
-	.fitches__items {
-		display: block;
-	}
-	.fitches__form {
-		margin-top: 0;
-		float: none;
-		margin: auto;
-	}
-	.fitchesblock {
-		padding: 15px 0;
-	}
-	.fitches__content {
-		max-width: 320px;
-	}
-	.services__item {
-		width: 100%;
-	}
-	.services__items {
-		display: block;
+		
+		
+		.params__dots {
+			display: none;
+		}
+		.params__value {
+		
+			padding-left: 0;
+			float: none;
+			display: block;
+		}
+		span.params__fordots {
+			position: initial;
+			padding: 0;
+			
+		}
+		
+		.params__prop span br {
+			display: none;
+		}
+		.paramss {
 		margin-bottom: 0;
-	}
-	.footermain__logo {
-		display: none;
-	}
-	.footermain__items {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.footermain__item_1 {
-		order: 2;
-		width: 100%;
-	}
-	.footermain__item_2 {
-		order: 1;
-		width: 100%;
-		position: relative;
-		padding: 15px 0 25px 5px;
-	}
-	.footerbottom__subitem {
-		display: block;
-	}
-	.footerbottom__copy {
-		width: 100%;
-		margin: 7px 0;
-		text-align: center;
-	}
-	.footerbottom__policy {
-		width: 100%;
-		margin: 5px 0 10px 0;
-		text-align: center;
-	}
-	.footerbottom__empis {
-		width: 100%;
-		margin: 5px 0;
-		text-align: center;
-	}
-	.footermain__requisites {
-		text-align: center;
-		width: 100%;
-	}
-	.footer__main {
-		padding: 0 0 0 0;
-	}
-	.requisites {
-		font-size: 12px;
-	}
-	.footermain__requisites {
-		background: #096a99;
-		padding: 15px 15px 0 15px;
-	}
-	.footer__bottom {
-		padding: 5px 0 15px 0;
-	}
-	.footermain__right {
-		padding-bottom: 10px;
-	}
-	.footerimg {
-		display: none;
-	}
-	.footerimg_mobile {
-		display: block;
-	}
-	.footerimg_mobile img {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 178px;
-	}
-	.footermain__right {
-		max-width: 50%;
-	}
-	body {
-		overflow-x: hidden;
-	}
-	.footer__main .container {
-		padding: 0;
-	}
-	#header.fixed .header__logo img {
-		height: 37px;
-	}
-	.footerbottom__items {
-		display: block;
-	}
-	.mainblock__pdf a {
-		font-size: 12px;
 	}
 }
