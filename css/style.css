@@ -335,11 +335,80 @@ a {
 
 .mainblock__image {
 	margin-top: 0px;
-	text-align: center;
 	    margin-bottom: -5px;
 }
 
+.whyblock__list li {
+	padding-left: 70px;
+	position: relative;
+	list-style: none;
+	margin-bottom: 35px;
+}
+.whyblock__list li:after {
+	position: absolute;
+	left: 0;
+	top: 17px;
+	content: "";
+	 width: 44px;
+  height: 3px;
+  background: #0a79ae;
+}
 
+.whyblock__title {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  display: block;
+  padding-bottom: 9px;
+
+}.whyblock__text {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1;
+  display: block;
+
+}
+h2 {
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.2;
+	margin-bottom: 50px;
+}
+
+.whyblock__content {
+	padding: 100px 0 0 80px;
+}
+
+.whyblock__image img {
+	position: absolute;
+	max-width: initial;
+	right: 0;
+	bottom: 0;
+}
+
+.whyblock .whyblock__image {
+	
+}
+.whyblock .row {
+display: flex;
+    /* height: 100%; */
+	    height: 754px;
+
+}
+.whyblock .row .col-md-5 {
+position: relative;
+height: 100%;
+}
+.whyblock .row .col-md-7 {
+position: relative;
+height: 100%;
+}
+
+.catalog {
+	background: #eef0f4;
+	padding: 65px 0;
+}
 
 
 @media screen and (min-width: 992px) {
