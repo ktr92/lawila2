@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Meta';
+    src: url('MetaBoldLF-Roman.eot');
+    src: url('MetaBoldLF-Roman.eot?#iefix') format('embedded-opentype'),
+        url('MetaBoldLF-Roman.woff2') format('woff2'),
+        url('MetaBoldLF-Roman.woff') format('woff'),
+        url('MetaBoldLF-Roman.ttf') format('truetype'),
+        url('MetaBoldLF-Roman.svg#MetaBoldLF-Roman') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MetaNormalCyrLF-Roman';
+    src: url('MetaNormalCyrLF-Roman.eot');
+    src: url('MetaNormalCyrLF-Roman.eot?#iefix') format('embedded-opentype'),
+        url('MetaNormalCyrLF-Roman.woff2') format('woff2'),
+        url('MetaNormalCyrLF-Roman.woff') format('woff'),
+        url('MetaNormalCyrLF-Roman.ttf') format('truetype'),
+        url('MetaNormalCyrLF-Roman.svg#MetaNormalCyrLF-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
