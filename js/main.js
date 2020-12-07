@@ -19,6 +19,7 @@ $(function() {
 
 
 
+
 $(window).scroll(function() {
     scroll = $(window).scrollTop();
 
@@ -30,6 +31,26 @@ $(window).scroll(function() {
 
 
 $(document).ready(function() {
+	
+	var letters = ['ОПТОВЫЕ ПОСТАВКИ','ДИЛЕРСТВО','КОНТАКТНОЕ ПРОИЗВОДСТВО'];
+
+	$(".tabsblock__tabs").slick({
+		autoplay: false,
+		dots: true,
+		fade: true,
+		arrows: true,
+		prevArrow: $('.tabsblock__left'),
+        nextArrow: $('.tabsblock__right'),
+		customPaging : function(slider, i) {
+		var thumb = $(slider.$slides[i]).data();
+		
+		return '<a>'+letters[i]+'</a>';
+				},
+		
+	});
+
+	
+	
     new WOW().init();
     $("input[type=tel]").mask("+7 (999) 999-99-99");
 
