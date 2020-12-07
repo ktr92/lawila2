@@ -23,7 +23,7 @@ $(function() {
 $(window).scroll(function() {
     scroll = $(window).scrollTop();
 
-    if (scroll >= 700) $('#header').addClass('fixed');
+    if (scroll >= 120) $('#header').addClass('fixed');
     else $('#header').removeClass('fixed');
 });
 
@@ -88,14 +88,7 @@ $(document).ready(function() {
 
             prevArrow: $('.reviews__left'),
             nextArrow: $('.reviews__right'),
-            responsive: [{
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-
-                    }
-                },
+            responsive: [
                 {
                     breakpoint: 767,
                     settings: {
@@ -122,7 +115,7 @@ $(document).ready(function() {
 
 
     } catch (err) {}
-    $('.reviews__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
+  
 
     lightbox.option({
         'resizeDuration': 20,
@@ -133,7 +126,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     jQuery("a.scrollto").click(function() {
         elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top - 30;
+        destination = jQuery(elementClick).offset().top - 60;
         jQuery("html:not(:animated),body:not(:animated)").animate({
             scrollTop: destination
         }, 1100);
