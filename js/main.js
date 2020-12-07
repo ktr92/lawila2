@@ -57,18 +57,15 @@ $(document).ready(function() {
     try {
         $('.serts__slider').slick({
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: false,
             autoplaySpeed: 3000,
             arrows: true,
             dots: false,
-            centerMode: true,
+           
             speed: 700,
 
-            centerPadding: '0',
-            variableWidth: true,
-            variableHeight: true,
             prevArrow: $('.serts__left'),
             nextArrow: $('.serts__right'),
 
