@@ -77,14 +77,14 @@ $(document).ready(function() {
     try {
         $('.reviews__slider').slick({
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             autoplay: false,
             autoplaySpeed: 3000,
             arrows: true,
-            dots: false,
+            dots: true,
             centerMode: false,
-            speed: 700,
+          
 
             prevArrow: $('.reviews__left'),
             nextArrow: $('.reviews__right'),

@@ -1,5 +1,6 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'MetaNormalCyrLF-Roman';
+
 	margin: 0;
 	color: #141414;
 	min-width: 320px;
@@ -151,7 +152,7 @@ img {
 
 .header__phone a {
 	font-size: 21px;
-	font-weight: bold;
+	font-family: 'MetaBoldCyrLF-Roman';
 	line-height: 1.2;
 	color: #000;
 }
@@ -430,7 +431,7 @@ height: 100%;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
-  font-weight: bold;
+  font-family: 'MetaBoldCyrLF-Roman';
   height: 60px;
   display: block;
 }
@@ -470,7 +471,7 @@ height: 100%;
  */  color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
-	font-weight: bold;
+	font-family: 'MetaBoldCyrLF-Roman';
 	margin-bottom: 10px;
 }
 
@@ -536,7 +537,7 @@ height: 100%;
   font-size: 16px;
 /*   font-family: "MetaBoldCyrLF";
  */  
- font-weight: bold;
+ font-family: 'MetaBoldCyrLF-Roman';
   text-transform: uppercase;
   height: 42px;
   line-height: 42px;
@@ -560,7 +561,7 @@ height: 100%;
 .title h2 {
   font-size: 48px;
   /* font-family: "MetaBoldCyrLF"; */
-  font-weight: bold;
+  font-family: 'MetaBoldCyrLF-Roman';
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 1.2;
@@ -762,7 +763,7 @@ body.modal-open {
   font-size: 24px;
 /*   font-family: "MetaBoldCyrLF";
  */ 
- font-weight: bold;
+ font-family: 'MetaBoldCyrLF-Roman';
  color: rgb(0, 0, 0);
   line-height: 1.2;
 	text-align: left;
@@ -774,7 +775,7 @@ body.modal-open {
   color: #ff3333;
   line-height: 1.2;
  margin-bottom: 13px;
- font-weight: bold;
+ font-family: 'MetaBoldCyrLF-Roman';
 }
 .modal__subprice {
   font-size: 15px;
@@ -928,7 +929,7 @@ hr {
   /* font-family: "MetaBoldCyrLF"; */
   color: rgb(255, 255, 255);
   line-height: 1.2;
-	font-weight: bold;
+	font-family: 'MetaBoldCyrLF-Roman';
 	padding-bottom: 15px;	
 }
 
@@ -971,7 +972,7 @@ hr {
   font-size: 16px;
   /* font-family: "MetaBoldCyrLF"; */
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-family: 'MetaBoldCyrLF-Roman';
   text-align: center;
 font-weight: 600;
 border: 2px solid #fff;
@@ -1062,7 +1063,7 @@ padding: 0 20px;
 
 .use__text {
   font-size: 17px;
-	font-weight: bold;
+	font-family: 'MetaBoldCyrLF-Roman';
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -1594,7 +1595,7 @@ padding: 0 20px;
 	span.pricing__fordots {
 		position: initial;
 		padding: 0;
-		font-weight: bold;
+		font-family: 'MetaBoldCyrLF-Roman';
 	}
 	.pricing__prop span br {
 		display: none;
@@ -1827,7 +1828,7 @@ padding: 0 20px;
 		
 	.params__prop {
 		width: 100%;
-		font-weight: bold;
+		font-family: 'MetaBoldCyrLF-Roman';
 	}
 		
 		
