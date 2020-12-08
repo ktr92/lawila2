@@ -68,6 +68,29 @@ $(document).ready(function() {
 
             prevArrow: $('.serts__left'),
             nextArrow: $('.serts__right'),
+			
+			 responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+
+                    }
+                },
+
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                  
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
 
         });
 
@@ -103,7 +126,6 @@ $(document).ready(function() {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        centerPadding: '35%',
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
