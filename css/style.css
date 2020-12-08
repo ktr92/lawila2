@@ -390,9 +390,9 @@ a {
 	left: 0;
 	top: 17px;
 	content: "";
-	 width: 44px;
-  height: 3px;
-  background: #0a79ae;
+	width: 44px;
+	height: 3px;
+	background: #0a79ae;
 }
 
 .whyblock__title {
@@ -2083,14 +2083,14 @@ margin-bottom: 25px;
 	.whyblock__list li:after {
 		position: absolute;
 		left: 0;
-		top: 17px;
+		top: 8px;
 		content: "";
 		width: 27px;
 		height: 2px;
 		background: #0a79ae;
 	}
 	.whyblock__list li {
-		padding-left: 45px;
+		padding-left: 40px;
 	}
 	.whyblock__text {
 		font-size: 15px;
@@ -2173,7 +2173,101 @@ margin-bottom: 25px;
 	.mainblock__button {
 		text-align: center;
 	}
+	.modal-body {
+		padding: 0;
+	}
+	.modal .form {
+		width: 255px;
+	}
+	#modal_callback .modal-dialog {
+		    max-width: 282px;
+	}
+	.modal-content {
+		padding: 30px 5px;
+	}
+	.mainblock .row {
+		    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+	}
+	.mainblock__image {
+		margin-top: 0px;
+		position: absolute;
+		bottom: 1px;
+		right: -10px;
 	
+	}
+	
+	.mainblock__image img {
+		max-width: 165px;
+	}
+	
+	
+	.icons__img {
+		width: 36px;
+		height: 36px;
+		padding: 5px;
+		margin: 1px auto;
+	}
+	.icons__text span {
+		  font-size: 11px;
+		line-height: 1;
+		}
+	.icons__text  {
+		line-height: 1;
+	}
+	.mainblock {
+		background: #ececec;
+		
+	}
+	.mainblock__right {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.whyblock .row {
+		flex-wrap: wrap;
+		height: initial;
+	}
+	.whyblock .row .col-md-5 {
+		order: 2;
+	}
+	.whyblock .row .col-md-7 {
+		order: 1;
+	}
+	.whyblock__image img {
+		position: initial;
+		max-width: 100%;
+	}
+	h2 {
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+	.whyblock__image  {
+		margin-top: -40px;
+	}
+	
+	.title h2 {
+		  font-size: 24px;
+		  color: rgb(0, 0, 0);
+		  text-transform: uppercase;
+		  line-height: 1.2;
+		  text-align: center;
+		  margin-bottom: 30px;
+		 
+		}
+	#header.fixed {
+		height: 116px;
+	}
+	.catalog {
+		padding: 35px 0;
+	}
+	.products__images {
+		width: 140px;
+		height: 140px;
+	}
+	.products__item {
+		padding: 0;
+	}
 }
 
 @media (max-width: 767px) {
