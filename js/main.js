@@ -1,3 +1,7 @@
+
+
+
+
 $(function() {
     $('#menu_open').click(function(event) {
         $(this).toggleClass('active');
@@ -32,12 +36,18 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
 	
+	
+
+	
+	
 	var letters = ['ОПТОВЫЕ ПОСТАВКИ','ДИЛЕРСТВО','КОНТАКТНОЕ ПРОИЗВОДСТВО'];
 
 	$(".tabsblock__tabs").slick({
 		autoplay: false,
 		dots: true,
 		fade: true,
+		slidesToShow: 1,
+            slidesToScroll: 1,
 		arrows: true,
 		prevArrow: $('.tabsblock__left'),
         nextArrow: $('.tabsblock__right'),
@@ -54,50 +64,9 @@ $(document).ready(function() {
     new WOW().init();
     $("input[type=tel]").mask("+7 (999) 999-99-99");
 
-    try {
-        $('.serts__slider').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 3000,
-            arrows: true,
-            dots: false,
-           
-            speed: 700,
-
-            prevArrow: $('.serts__left'),
-            nextArrow: $('.serts__right'),
-			
-			 responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-
-                    }
-                },
-
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                  
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-
-        });
-
-    } catch (err) {}
-    $('.serts__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
-
-    try {
+    
+	
+   if ($(window).width() > 999) {
         $('.reviews__slider').slick({
             infinite: true,
             slidesToShow: 3,
@@ -107,36 +76,38 @@ $(document).ready(function() {
             arrows: true,
             dots: true,
             centerMode: false,
-          
-
             prevArrow: $('.reviews__left'),
-            nextArrow: $('.reviews__right'),
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-
-                    }
-                },
-
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
+            nextArrow: $('.reviews__right'),            
         });
-
-
-
-    } catch (err) {}
+    } 
+	if (($(window).width() < 1000) && (($(window).width() > 768))) {
+        $('.reviews__slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: true,
+            centerMode: false,
+            prevArrow: $('.reviews__left'),
+            nextArrow: $('.reviews__right'),            
+        });
+    } 
+  if ($(window).width() < 769) {
+        $('.reviews__slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: true,
+            centerMode: false,
+            prevArrow: $('.reviews__left'),
+            nextArrow: $('.reviews__right'),            
+        });
+    } 
   
 
     lightbox.option({
@@ -148,7 +119,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     jQuery("a.scrollto").click(function() {
         elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top - 60;
+        destination = jQuery(elementClick).offset().top - 90;
         jQuery("html:not(:animated),body:not(:animated)").animate({
             scrollTop: destination
         }, 1100);
@@ -165,4 +136,76 @@ $(document).ready(function() {
     function close_modal() {
         $('.dom-popup').css("display", "none");
     }
+});
+
+
+
+$(document).ready(function() {
+	
+	
+	if ($(window).width() > 999) {
+		
+        $('.serts__slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: false,
+            prevArrow: $('.serts__left'),
+            nextArrow: $('.serts__right'),
+		});
+	}
+	
+	if (($(window).width() < 1000) && (($(window).width() > 768))) {
+		
+        $('.serts__slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: false,
+            prevArrow: $('.serts__left'),
+            nextArrow: $('.serts__right'),
+		});
+	}
+	
+	if (($(window).width() < 769) && (($(window).width() > 480))) {
+		
+        $('.serts__slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: false,
+            prevArrow: $('.serts__left'),
+            nextArrow: $('.serts__right'),
+		});
+	}
+	
+	if ($(window).width() < 481) {
+		
+        $('.serts__slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: false,
+            prevArrow: $('.serts__left'),
+            nextArrow: $('.serts__right'),
+		});
+	}
+	
+	
+		
+	
+    $('.serts__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
+
 });
